@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="short icon" href="./images/tab.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header section starts from here -->
+    <h1 id="heading"><marquee behavior="alternate" direction="right">Welcome to the Ecommerce Website</marquee></h1>
+    <nav class="navBar" id="navbar">
+        <a href=""><img src="./images/logo.jpeg" alt="logo image" width="60px" height="60px" id="logo"></a>
+        <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>About</li></a>
+            <a href="#electronics_data"><li>Electronics</li></a>
+            <a href="#clothing_data"><li>Clothing</li></a>
+            <a href="#jewellery_data"><li>Jewellery</li></a>
+        </ul>
+        <a href="#cartList"><img src="./images/cart.jpeg" alt="cart image" width="60px" height="60px" id="car"></a>
+        <!-- <span class="quan" id="cartTotal">0</span> -->
+        <div id="click_me" class="quant">0</div>
+    </nav>
+    
+    <hr>
+    <!-- Header section ends here -->
+
+
+    <!-- swiper section section -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/electronic.png" style="width:100%"  height="400px">
+          <div class="text">Electronics</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/clothes.png" style="width:100%" height="400px">
+          <div class="text">Women's Clothing</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/jewels.jpg" style="width:100%" height="400px" >
+          <div class="text" style="text-align: left;">Jewellery</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+    <!-- swiper section ends -->
+
+
+    <!-- Category section starts from here -->
+    <section class="category" id="category">
+        
+        <div class="product-list" id="electronics_data">
+            <h2>Electronics</h2>
+        </div>
+
+        <div class="product-list" id="clothing_data">
+            <h2>Women's Clothing</h2>
+        </div>
+
+        <div class="product-list" id="jewellery_data">
+            <h2>Jewellery</h2>
+        </div>
+        
+    </section>
+    
+    <!-- Div to display the errors -->
+    <div id="errorDisplay"></div>
+
+
+    <!-- cart section -->
+    <!-- cart page -->
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cartList" class="cart-list data">
+            <!-- cart items will be dynamically added here -->
+        </div>
+        <div id="total" class="cart-total">Total:$0.00</div>
+    </div>
+
+    <!-- footer starts from here -->
+    <footer class="bg-dark text-white-50 text-center mt-5 p-3" id="footer">
+        copyright &copy; 2023 Sandhya Rani - <a href="https://github.com/Sandhya990" class="text-white-50">GitHub</a> | <a href="https://www.linkedin.com/in/sandhya-rani-udumula77443" class="text-white-50">LinkedIn</a> | <a href="https://www.hackerrank.com/sandhyaraniu7744" class="text-white-50">Hackerrank</a>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- script file -->
+    <script src="script.js"></script>
+</body>
+</html>
